@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello, World!'
+    return jsonify({'Hello, World!':'Hello, World!'})
 
 @app.route('/api/get_recomendation' , methods=['POST'])
 def Get_recomendations():
